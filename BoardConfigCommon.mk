@@ -226,3 +226,6 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Include the proprietary files BoardConfig.
 -include vendor/sony/dolby/BoardConfigDolby.mk
+
+# HWUI
+TARGET_USES_VULKAN := true
