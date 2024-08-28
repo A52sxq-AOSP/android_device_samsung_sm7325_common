@@ -157,17 +157,6 @@ AUDIO_FEATURE_ENABLED_SVA_MULTI_STAGE := true
 BOARD_SUPPORTS_SOUND_TRIGGER := true
 TARGET_PROVIDES_AUDIO_EXTNS := true
 
-# Camera
-SOONG_CONFIG_NAMESPACES += samsungCameraVars
-SOONG_CONFIG_samsungCameraVars += \
-    extra_ids \
-    needs_sec_reserved_field
-
-# ID=54 is macro
-SOONG_CONFIG_samsungCameraVars_extra_ids := 54
-
-SOONG_CONFIG_samsungCameraVars_needs_sec_reserved_field := true
-
 # HIDL manifests
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/configs/manifest_lahaina.xml
 DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
