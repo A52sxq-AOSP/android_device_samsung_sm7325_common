@@ -6238,3 +6238,8 @@ esac
 misc_link=$(ls -l /dev/block/bootdevice/by-name/misc)
 real_path=${misc_link##*>}
 setprop persist.vendor.mmi.misc_dev_path $real_path
+
+# Improve foreground task scheduling latency via uclamp
+if [ -e /dev/stune/top-app/uclamp.min ]; then
+    echo 512 > /dev/stune/top-app/uclamp.min
+fi
