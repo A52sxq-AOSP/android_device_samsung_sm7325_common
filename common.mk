@@ -458,3 +458,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Inherit proprietary blobs
 $(call inherit-product, vendor/samsung/sm7325-common/sm7325-common-vendor.mk)
+
+# Set system_server compiler filter to speed-profile
+PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
+
