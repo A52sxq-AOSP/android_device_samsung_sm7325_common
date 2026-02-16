@@ -220,3 +220,8 @@ ro.vendor.vibrator_hal.tick_duration=40
 
 # Wifi
 wifi.aware.interface=wifi-aware0
+
+# QTI Perf
+ro.vendor.extension_library=libqti-perfd-client.so
+vendor.perf.framepacing.enable=1
+
