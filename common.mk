@@ -150,6 +150,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.memtrack-service \
     AdvancedDisplay
 
+# Dolby
+$(call inherit-product-if-exists, vendor/sony/dolby/dolby.mk)
+
 # Doze
 PRODUCT_PACKAGES += \
     SamsungDoze
