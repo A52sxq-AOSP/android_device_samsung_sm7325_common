@@ -270,12 +270,6 @@ on boot
 
     chown system system /sys/class/power_supply/battery/gps
 
-service factory_ssc /vendor/bin/factory.ssc
-    class core
-    user system
-    group system radio inet diag net_admin net_raw sdcard_rw sdcard_r media_rw
-
-
 on property:sys.boot_completed=1
     setprop ro.factory.sensor.delay.init 1
 
