@@ -10,5 +10,11 @@
   {
         "repository": "android_hardware_samsung_slsi_nfc",
         "target_path": "hardware/samsung_slsi/nfc"
+  },
+  {
+        "repository": "krazey/ims",
+        "target_path": "packages/apps/PhhIms",
+        "remote": "github",
+        "branch": "main"
   }
 ]

@@ -1359,4 +1359,14 @@
 
     <!-- Whether the new Auto Selection Network UI should be shown -->
     <bool name="config_enableNewAutoSelectNetworkUI">true</bool>
+
+    <!-- IMS: VoLTE/VoWiFi capability flags -->
+    <bool name="config_carrier_volte_available">true</bool>
+    <bool name="config_device_volte_available">true</bool>
+    <bool name="config_device_vt_available">true</bool>
+
+    <!-- IMS: WLAN data/network service and QNS packages -->
+    <string name="config_wlan_data_service_package">com.google.android.iwlan</string>
+    <string name="config_wlan_network_service_package">com.google.android.iwlan</string>
+    <string name="config_qualified_networks_service_package">com.android.telephony.qns</string>
 </resources>
