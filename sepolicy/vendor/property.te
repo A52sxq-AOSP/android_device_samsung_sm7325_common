@@ -1,5 +1,2 @@
 # qseecom
 vendor_internal_prop(vendor_qseecomd_prop)
-
-# IMS
-vendor_internal_prop(vendor_ims_prop)
