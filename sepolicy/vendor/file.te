@@ -39,3 +39,4 @@ type wifi_efs_file, file_type;
 
 # PROC
 type proc_last_kmsg, fs_type, proc_type;
+type proc_sched_walt, fs_type, proc_type;

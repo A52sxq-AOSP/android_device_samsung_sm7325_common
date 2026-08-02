@@ -43,3 +43,6 @@ allow hal_power_default { sysfs_sensors vendor_sysfs_sensors }:dir search;
 allow hal_power_default sysfs_sensors:file { open write };
 
 allow hal_power_default vendor_pps_socket:sock_file rw_file_perms;
+
+# /proc/sys/kernel/sched_{boost,upmigrate,downmigrate,group_upmigrate,group_downmigrate}
+allow hal_power_default proc_sched_walt:file rw_file_perms;
